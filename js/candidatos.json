@@ -1,0 +1,176 @@
+{
+    "candidato" : [
+    {
+        //primer candidato
+        "id" : 1,
+        "disponibilidad a movilizarse" : 1,
+        "renta" : 600000,
+        "años experiencia" : 5,
+        "edad" : 28,
+        "genero" : "masculino",
+        "apellido" : "Abarza",
+        "nombre" : "Francisco",
+        "estudios" : {
+            "pregrado" : [
+            {
+                "duracion" : 4,
+                "area estudio" : "Diseño",
+                "años estudio" : 4,
+                "institucion" : "UST",
+                "carrera" : "Diseño Gráfico"
+                },
+                {
+                    "duracion" : 3,
+                    "area estudio" : "Informática",
+                    "años estudio" : 3,
+                    "institucion" : "UTFSM",
+                    "carrera" : "Ingeniería en Software"
+                }
+
+                ],
+                "postgrado" : [
+                {
+                    "duracion" : ,
+                    "area estudio" : "",
+                    "nombre" : "",
+                    "institucion" : ""
+                }
+                ]
+                },
+                "contacto" : {
+                    "linkedin url" : "http://cl.linkedin.com/franciscoabarza",
+                    "email" : "francisco@abar.za.com",
+                    "telefono" : 56973790479,
+                    "ciudad" : "San Pedro de la Paz",
+                    "region" : "Biobio"
+                    },
+                    "competencias" : {
+                        "git" : 1,
+                        "db relacional" : 1,
+                        "jquery" : 1,
+                        "javascript" : 1,
+                        "css3" : 1,
+                        "java" : 1,
+                        "phyton" : 1,
+                        "html5" : 1
+                        },
+                        "habilidades blandas" : {
+                            "proactividad" : 0.85,
+                            "trabajo en equipo" : 0.9,
+                            "liderazgo" : 1,
+                            "comunicacion" : 0.80
+                        }
+    },
+    {
+        //segundo candidato
+        "id" : 2,
+        "disponibilidad a movilizarse" : 0,
+        "renta" : 400000,
+        "años experiencia" : 5,
+        "edad" : 28,
+        "genero" : "femenido",
+        "apellido" : "Kease",
+        "nombre" : "Hola",
+        "estudios" : {
+            "pregrado" : [
+            {
+                "duracion" : 3,
+                "area estudio" : "Informática",
+                "años estudio" : 4,
+                "institucion" : "UBB",
+                "carrera" : "Ingeniería Informática"
+                }
+                ],
+                "postgrado" : [
+                {
+                    "duracion" : 1,
+                    "area estudio" : "Informática",
+                    "nombre" : "diplomado",
+                    "institucion" : "UTFSM"
+                }
+                ]
+                },
+                "contacto" : {
+                    "linkedin url" : "http://cl.linkedin.com/holakease",
+                    "email" : "mail@mail.com",
+                    "telefono" : 56973790479,
+                    "ciudad" : "Concepción",
+                    "region" : "Biobio"
+                    },
+                    "competencias" : {
+                        "git" : 1,
+                        "db relacional" : 1,
+                        "jquery" : 0,
+                        "javascript" : 0,
+                        "css3" : 1,
+                        "java" : 0,
+                        "phyton" : 1,
+                        "html5" : 1
+                        },
+                        "habilidades blandas" : {
+                            "proactividad" : 0.25,
+                            "trabajo en equipo" : 0.2,
+                            "liderazgo" : 0.3,
+                            "comunicacion" : 0.4
+                        }
+    },
+    {
+        //tercer candidato
+        "id" : 3,
+        "disponibilidad a movilizarse" : 1,
+        "renta" : 200000,
+        "años experiencia" : 5,
+        "edad" : 25,
+        "genero" : "masculino",
+        "apellido" : "John",
+        "nombre" : "Bonachon",
+        "estudios" : {
+            "pregrado" : [
+            {
+                "duracion" : 6,
+                "area estudio" : "Informática",
+                "años estudio" : 4,
+                "institucion" : "UDEC",
+                "carrera" : "Ingeniería Informática"
+                }
+                ],
+                "postgrado" : [
+                {
+                    "duracion" : 3,
+                    "area estudio" : "Informática",
+                    "nombre" : "diplomado",
+                    "institucion" : "UBB"
+                }
+                ]
+                },
+                "contacto" : {
+                    "linkedin url" : "http://cl.linkedin.com/holakease",
+                    "email" : "johnbonachon@mail.com",
+                    "telefono" : 56973790479,
+                    "ciudad" : "Concepción",
+                    "region" : "Biobio"
+                    },
+                    "competencias" : {
+                        "git" : 0,
+                        "db relacional" : 1,
+                        "jquery" : 1,
+                        "javascript" : 0,
+                        "css3" : 0,
+                        "java" : 1,
+                        "phyton" : 1,
+                        "html5" : 1
+                        },
+                        "habilidades blandas" : {
+                            "proactividad" : 0.5,
+                            "trabajo en equipo" : 0.5,
+                            "liderazgo" : 0.5,
+                            "comunicacion" : 0.4
+                        }
+    },
+
+
+
+
+
+    ]
+}

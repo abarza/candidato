@@ -1,0 +1,784 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"script",
+				"script-src	HTML/Snippet"
+			],
+			[
+				"demo_em",
+				"demo_empresa"
+			],
+			[
+				"onl",
+				"onclick	Attr"
+			],
+			[
+				"function",
+				"isFunction	jQuery"
+			],
+			[
+				"fun",
+				"function	jsProp"
+			],
+			[
+				"Remo",
+				"removeClass	jQuery"
+			],
+			[
+				"has",
+				"hasClass	jQuery"
+			],
+			[
+				"paddin",
+				"padding"
+			],
+			[
+				"removeC",
+				"removeClass	jQuery"
+			],
+			[
+				"bac",
+				"background"
+			],
+			[
+				"text",
+				"textbase"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"ba",
+				"background"
+			],
+			[
+				"paddi",
+				"padding"
+			],
+			[
+				"margin",
+				"margin"
+			],
+			[
+				"padding",
+				"padding"
+			],
+			[
+				"vis",
+				"visible-lg	BootstrapClass"
+			],
+			[
+				"visi",
+				"visible-md	BootstrapClass"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"hidde",
+				"hidden-md	BootstrapClass"
+			],
+			[
+				"al",
+				"alt	Attr"
+			],
+			[
+				"demo_",
+				"demo_email"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"tex",
+				"textbase"
+			],
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"ver",
+				"verdefrogmi"
+			],
+			[
+				"wo",
+				"workforce"
+			],
+			[
+				"padd",
+				"padding-bottom"
+			],
+			[
+				"img",
+				"img-responsive	BootstrapClass"
+			],
+			[
+				"col-md",
+				"col-md-3	BootstrapClass"
+			],
+			[
+				"te",
+				"textbase"
+			],
+			[
+				"fot",
+				"font-size"
+			],
+			[
+				"line",
+				"line-height"
+			],
+			[
+				"verde",
+				"verdeclaro"
+			],
+			[
+				"margi",
+				"margin-bottom"
+			],
+			[
+				"col",
+				"col-xs-12	BootstrapClass"
+			],
+			[
+				"col-",
+				"col-xs-6	BootstrapClass"
+			],
+			[
+				"hid",
+				"hidden-xs	BootstrapClass"
+			],
+			[
+				"hidden",
+				"hidden-xs	BootstrapClass"
+			],
+			[
+				"hidden-",
+				"hidden-sm	BootstrapClass"
+			],
+			[
+				"hide",
+				"hidden-md	BootstrapClass"
+			],
+			[
+				"verd",
+				"verdeosc"
+			],
+			[
+				"cla",
+				"class	Attr"
+			],
+			[
+				"padi",
+				"padding-top"
+			],
+			[
+				"im",
+				"important"
+			],
+			[
+				"border-ra",
+				"border-radius:   (property)"
+			],
+			[
+				"margin-b",
+				"margin-bottom"
+			],
+			[
+				"col-lg",
+				"col-lg-6	BootstrapClass"
+			],
+			[
+				"font-s",
+				"font-size"
+			],
+			[
+				"othe",
+				"othersolutions"
+			],
+			[
+				"list",
+				"list-style"
+			],
+			[
+				"hr",
+				"href	Attr"
+			],
+			[
+				"u",
+				"ul	<ul>"
+			],
+			[
+				"he",
+				"height	Attr"
+			],
+			[
+				"style",
+				"style	Attr"
+			],
+			[
+				"h",
+				"h1	Tag"
+			],
+			[
+				"wi",
+				"width"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 627,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/mejorcandidato.js",
+			"settings":
+			{
+				"buffer_size": 187,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 370.0,
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"vie",
+				"View: Toggle Menu"
+			],
+			[
+				"isntall",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 504.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/D/MEGAsync/Proyectos/frogmi/nocdn/index.html",
+		"/D/MEGAsync/Proyectos/frogmi/nocdn/frogmi_br.html",
+		"/D/MEGAsync/Proyectos/frogmi/nocdn/frogmi_en.html",
+		"/D/MEGAsync/Proyectos/frogmi/frogmi_br.html",
+		"/D/MEGAsync/Proyectos/frogmi/css/frogmi.styl",
+		"/D/MEGAsync/Proyectos/frogmi/css/frogmi.css",
+		"/D/MEGAsync/Proyectos/frogmi/index.html",
+		"/D/MEGAsync/Proyectos/frogmi/frogmi_en.html",
+		"/D/MEGAsync/Proyectos/frogmi/mailer.php",
+		"/C/Users/Francisco/AppData/Local/Temp/Rar$EX06.832/contact_form.html",
+		"/C/Users/Francisco/Desktop/mailer.php",
+		"/C/Users/Francisco/AppData/Local/Temp/Rar$EX51.424/contact_form.html",
+		"/D/MEGAsync/Proyectos/frogmi/seo_basico.txt",
+		"/D/MEGAsync/Proyectos/frogmi/js/frogmi.js",
+		"/D/MEGAsync/Proyectos/frogmi/comentarios.txt",
+		"/D/MEGAsync/Proyectos/frogmi/modal.no",
+		"/D/MEGAsync/Proyectos/frogmi/README.md",
+		"/D/MEGAsync/Proyectos/frogmi/.gitignore",
+		"/D/MEGAsync/Proyectos/frogmi/js/jquery.knob.js",
+		"/C/Program Files (x86)/SAi/SAi Production Suite/Jobs and Settings/CPSI.HTML",
+		"/D/MEGAsync/Proyectos/frogmi/sacadoalianzas.no",
+		"/D/MEGAsync/Proyectos/frogmi/sacado2.no",
+		"/D/MEGAsync/Proyectos/frogmi/css/mediaq.css",
+		"/D/MEGAsync/Proyectos/frogmi/css/frogmi2.css",
+		"/D/MEGAsync/Proyectos/frogmi/css/mediaq.styl",
+		"/D/MEGAsync/Proyectos/frogmi/css/flag-icon.min.css",
+		"/D/MEGAsync/Proyectos/frogmi/css/docs.css",
+		"/C/Users/Francisco/Desktop/flag-icon-css-master/index.html",
+		"/C/Users/Francisco/Desktop/flag-icon-css-master/assets/docs.css",
+		"/D/MEGAsync/Proyectos/frogmi/css/css",
+		"/D/MEGAsync/Proyectos/frogmi/sacado1",
+		"/C/Users/Francisco/Downloads/Navicat.for.SQLite.Enterprise.v9.0.9.Incl.Keymaker-CORE/Navicat.for.SQLite.Enterprise.v9.0.9.Incl.Keymaker-CORE/CORE.NFO",
+		"/D/MEGAsync/Proyectos/Biotren/db/inserts.sql",
+		"/D/MEGAsync/Proyectos/Biotren/db/biotren_create.sql",
+		"/D/MEGAsync/Proyectos/Zembia/web/ftp/css/style.css",
+		"/D/MEGAsync/Proyectos/Zembia/web/ftp/wp-content/themes/zembia-theme/lib/nosotros.php",
+		"/C/Users/Francisco/Desktop/a-Crack/fperson.nfo",
+		"/D/MEGAsync/Proyectos/Zembia/web/ftp/wp-content/themes/zembia-theme/lib/footer.php",
+		"/D/MEGAsync/Proyectos/Zembia/web/ftp/js/main.js",
+		"/D/MEGAsync/Proyectos/Zembia/web/ftp/wp-content/themes/zembia-theme/lib/innovacion.php",
+		"/D/MEGAsync/Proyectos/Zembia/web/ftp/js/vdeostaphpls.js",
+		"/D/MEGAsync/Proyectos/Zembia/web/ftp/js/scripts.js",
+		"/D/MEGAsync/Proyectos/Zembia/web/ftp/wp-content/themes/zembia-theme/lib/servicios.php",
+		"/D/MEGAsync/Proyectos/Zembia/web/ftp/wp-content/themes/zembia-theme/style.css",
+		"/D/MEGAsync/Proyectos/Zembia/web/ftp/wp-content/themes/zembia-theme/lib/contacto.php",
+		"/D/MEGAsync/Proyectos/Zembia/web/ftp/wp-content/themes/zembia-theme/lib/header.php",
+		"/D/MEGAsync/Proyectos/Zembia/web/ftp/wp-content/themes/zembia-theme/lib/clientes.php",
+		"/D/MEGAsync/Proyectos/Zembia/web/ftp/wp-content/themes/zembia-theme/lib/navbar.php",
+		"/D/MEGAsync/Proyectos/Zembia/web/ftp/wp-content/themes/zembia-theme/lib/portafolio.php",
+		"/D/MEGAsync/Proyectos/Zembia/web/ftp/wp-content/themes/zembia-theme/lib/intro.php",
+		"/D/MEGAsync/Proyectos/Zembia/web/ftp/wp-content/themes/zembia-theme/zembia-home.php",
+		"/D/MEGAsync/Proyectos/Zembia/web/ftp/sftp-config.json",
+		"/D/Dropbox/netbook/FileZilla.xml",
+		"/C/Users/Francisco/AppData/Roaming/Sublime Text 3/Packages/User/SFTP.errors.log",
+		"/C/Users/Francisco/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/D/MEGAsync/Proyectos/www/hola/index.html"
+	],
+	"find":
+	{
+		"height": 28.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"intro",
+			"logi",
+			"contact",
+			"form",
+			"ver",
+			"Demonstração",
+			"sch",
+			"schedule",
+			"demo",
+			"btn-circle",
+			"demo",
+			"topbar",
+			".l",
+			"span",
+			"demo",
+			"form",
+			"topbar li .callmi",
+			".C",
+			"BEFORE",
+			"ABOUT",
+			"LINK",
+			"form",
+			"features",
+			"#FEATURES",
+			"nomb",
+			"alt=",
+			" .",
+			".navbar-main-collapse",
+			"navbar-toggle",
+			"page-top",
+			"intro",
+			"img",
+			"alt",
+			"features",
+			"footer",
+			"modal-body",
+			"#features",
+			"#CONCEPT",
+			"social",
+			"footer",
+			"modal",
+			"Cumplimiento deficiente en la ejecución",
+			"content",
+			"li",
+			"concept",
+			"benefits",
+			"about",
+			"download",
+			"superma",
+			"features",
+			"content-section",
+			"features",
+			"shadow",
+			"data-target",
+			"SPAN",
+			"location",
+			"a",
+			"negrotexttex",
+			"button",
+			"content",
+			"h1",
+			"modal",
+			"ul",
+			"li",
+			"bene",
+			"section",
+			"modal",
+			"part",
+			"ALIANZAS",
+			"drop",
+			"appstore",
+			"footer",
+			"other",
+			"bran",
+			"caracter",
+			">\n",
+			"benefits",
+			"h1",
+			"download",
+			"main-de",
+			"main-desc",
+			"appstore",
+			"intro",
+			"#",
+			"7EC456",
+			"verdefro",
+			"#",
+			"#5aad1a",
+			"#",
+			"#fcfcfc",
+			"#6aa53d",
+			"#",
+			"monse",
+			"lora",
+			"rgba(255,255,255,.2)",
+			"#91ca66",
+			"#333",
+			"#323031",
+			"#f1f1f1",
+			"text-shado",
+			"selection",
+			"intro",
+			"Español",
+			"icons",
+			"intro",
+			"page-scroll",
+			"btn-circle",
+			"concept-se",
+			"a ",
+			"#concept",
+			"Concept",
+			"concept",
+			"content",
+			"button",
+			"img",
+			"conce",
+			"hover",
+			"5",
+			"null",
+			",",
+			" VALUES",
+			"(estacion_id,estacion_nombre,estacion_direccion,estacion_comuna,estacion_fono,estacion_lat,estacion_long,linea,biobus,intermodal,biobici,bici_est)",
+			" (",
+			"intro",
+			"footer",
+			"innovacion",
+			"script"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"10",
+			"VALUES",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 627,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								619,
+								619
+							]
+						],
+						"settings":
+						{
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"Mason",
+								"XBL",
+								"XUL",
+								"RHTML",
+								"SCSS",
+								"Python",
+								"HTML",
+								"Ruby",
+								"Python3",
+								"XML",
+								"Sass",
+								"XSLT",
+								"Django",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"Twig",
+								"Less",
+								"Smarty",
+								"Node.js",
+								"Tcl",
+								"TemplateToolkit",
+								"PHP"
+							],
+							"codeintel_max_recursive_dir_depth": 10,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"PyWin32",
+								"jQuery",
+								"Rails"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"codeintel_tooltips": "popup",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"sublime_auto_complete": true,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "js/mejorcandidato.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 187,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 28.0
+	},
+	"input":
+	{
+		"height": 37.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 134.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 84.0
+	},
+	"project": "cand.sublime-project",
+	"replace":
+	{
+		"height": 52.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"D:\\MEGAsync\\Proyectos\\Zembia\\web\\ssh\\zembiassh.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 168.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
