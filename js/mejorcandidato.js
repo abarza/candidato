@@ -109,9 +109,11 @@ for (var i = 0; i < candidatos.length; i++) {
     var values = [];
     values.push(c.name, value, weight);
 
-    console.log(values);
 
-    //console.log(weight);
+
+
+
+    console.log(weight);
 
 
 
@@ -123,6 +125,3 @@ for (var i = 0; i < candidatos.length; i++) {
     document.write(out);
 
 }
-
-
-console.log([0][3]);

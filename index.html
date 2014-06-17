@@ -1,29 +1,244 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui"> <!-- "minimal-ui" iOS7-->
-    <meta name="apple-mobile-web-app-capable" content="yes" /> <!-- Minimal UI iOS6-->
-    <meta name="apple-mobile-web-app-status-bar-style" content="black"> <!-- color statusbar -->
-    <meta name="description" content="">
-    <meta name="author" content="Abarza">
-    <link rel="shortcut icon" href="img/favicon.png" type="image/png" />
-    <title>Candidatos</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Mochila - Abarza</title>
+    <style type='text/css'>
+        #items_list input{
+            width:50px;
+        }
+        #items_list input.name{
+            width:100%;
+        }
+    </style>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- CSS inzpiral -->
+    <link href="css/ga.css" rel="stylesheet">
+
 </head>
-<body>
+<body onload='init();'>
 
-    <div class="container" style="border-bottom:1px solid black">
-        <div class="col-lg-4 col-xs-4 col-md-4"><b>Candidato</b></div>
-        <div class="col-lg-4 col-xs-4 col-md-4"><b>Valor</b></div>
-        <div class="col-lg-4 col-xs-4 col-md-4"><b>Peso</b></div>
-    </div>
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Candidatos</a>
+            </div>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/mejorcandidato.js"></script>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <p class="navbar-text navbar-right">Ejemplo Algoritmo Genético</p>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+
+    <!-- Content -->
+    <div class="row">
+        <div class="container">
+            <!-- Resultados y controles -->
+            <div class="col-md-6">
+                <!-- controles -->
+                <div class="btn-group">
+                    <input type="button" class="btn btn-success" value="Resolver problema mochila" onclick="mochila_init();">
+                    <select id="selection" class="btn btn-default" style="padding:7px">
+                        <option>ranking</option>
+                        <option>torneo</option>
+                    </select>
+                    <input type="button" class="btn btn-danger" value="Stop" onclick="stop();">
+                </div>
+
+                <!-- resultados -->
+                <div style="margin-top: 15px">
+                    <div id="status" class="alert alert-success"></div>
+                    <div id="result" class="alert alert-info"></div>
+                </div>
+            </div>
+
+            <!-- Configuracion -->
+            <div class="col-md-6">
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Configuración</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="input-group">
+                            <span class="input-group-addon">Capacidad</span>
+                            <input id='max_weight' type="text" class="form-control" value='400'>
+                        </div>
+                        <h4>Candidatos:</h4>
+                        <button id='add_item_button' class="btn btn-success" onclick='add_item();'>Agregar</button>
+                        <button id='remove_item_button' class="btn btn-warning" onclick='remove_item();'>Remover</button>
+
+                        <table class="table">
+                        <thead>
+                        <tr>
+                            <th style="width: 60%">Nombre</th>
+                            <th>Peso</th>
+                            <th>Valor</th>
+                            <th>Límite</th>
+                        </tr>
+                        </thead>
+                        <tbody id='items_list'>
+                        <tr>
+                        <td><input type='text' class='name form-control' value='Claudio Bravo'></td>
+                        <td><input type='text' class='weight form-control' value='9'></td>
+                        <td><input type='text' class='value form-control' value='150'></td>
+                        <td><input type='text' class='bound form-control' value='1'></td>
+                        </tr>
+                        <tr>
+                        <td><input type='text' class='name form-control' value='Johnny Herrera'></td>
+                        <td><input type='text' class='weight form-control' value='13'></td>
+                        <td><input type='text' class='value form-control' value='35'></td>
+                        <td><input type='text' class='bound form-control' value='1'></td>
+                        </tr>
+                        <tr>
+                        <td><input type='text' class='name form-control' value='Cristopher Toselli'></td>
+                        <td><input type='text' class='weight form-control' value='153'></td>
+                        <td><input type='text' class='value form-control' value='200'></td>
+                        <td><input type='text' class='bound form-control' value='1'></td>
+                        </tr>
+                        <tr>
+                        <td><input type='text' class='name form-control' value='Gary Medel'></td>
+                        <td><input type='text' class='weight form-control' value='50'></td>
+                        <td><input type='text' class='value form-control' value='60'></td>
+                        <td><input type='text' class='bound form-control' value='1'></td>
+                        </tr>
+                        <tr>
+                        <td><input type='text' class='name form-control' value='Gonzalo Jara'></td>
+                        <td><input type='text' class='weight form-control' value='15'></td>
+                        <td><input type='text' class='value form-control' value='60'></td>
+                        <td><input type='text' class='bound form-control' value='1'></td>
+                        </tr>
+                        <tr>
+                        <td><input type='text' class='name form-control' value='Jose Rojas'></td>
+                        <td><input type='text' class='weight form-control' value='68'></td>
+                        <td><input type='text' class='value form-control' value='45'></td>
+                        <td><input type='text' class='bound form-control' value='1'></td>
+                        </tr>
+                        <tr>
+                        <td><input type='text' class='name form-control' value='Miiko Albornoz'></td>
+                        <td><input type='text' class='weight form-control' value='27'></td>
+                        <td><input type='text' class='value form-control' value='60'></td>
+                        <td><input type='text' class='bound form-control' value='1'></td>
+                        </tr>
+                        <tr>
+                        <td><input type='text' class='name form-control' value='Marcelo Diaz'></td>
+                        <td><input type='text' class='weight form-control' value='39'></td>
+                        <td><input type='text' class='value form-control' value='40'></td>
+                        <td><input type='text' class='bound form-control' value='1'></td>
+                        </tr>
+                        <tr>
+                        <td><input type='text' class='name form-control' value='Arturo Vidal'></td>
+                        <td><input type='text' class='weight form-control' value='23'></td>
+                        <td><input type='text' class='value form-control' value='30'></td>
+                        <td><input type='text' class='bound form-control' value='1'></td>
+                        </tr>
+                        <tr>
+                        <td><input type='text' class='name form-control' value='Mauricio Pinilla'></td>
+                        <td><input type='text' class='weight form-control' value='52'></td>
+                        <td><input type='text' class='value form-control' value='10'></td>
+                        <td><input type='text' class='bound form-control' value='1'></td>
+                        </tr>
+                        <tr>
+                        <td><input type='text' class='name form-control' value='Alexis Sanchez'></td>
+                        <td><input type='text' class='weight form-control' value='11'></td>
+                        <td><input type='text' class='value form-control' value='70'></td>
+                        <td><input type='text' class='bound form-control' value='1'></td>
+                        </tr>
+                        <tr>
+                        <td><input type='text' class='name form-control' value='Esteba Paredes'></td>
+                        <td><input type='text' class='weight form-control' value='32'></td>
+                        <td><input type='text' class='value form-control' value='30'></td>
+                        <td><input type='text' class='bound form-control' value='1'></td>
+                        </tr>
+                        <tr>
+                        <td><input type='text' class='name form-control' value='Charles Aranguiz'></td>
+                        <td><input type='text' class='weight form-control' value='24'></td>
+                        <td><input type='text' class='value form-control' value='15'></td>
+                        <td><input type='text' class='bound form-control' value='1'></td>
+                        </tr>
+                        <tr>
+                        <td><input type='text' class='name form-control' value='Mauricio Isla'></td>
+                        <td><input type='text' class='weight form-control' value='48'></td>
+                        <td><input type='text' class='value form-control'  value='10'></td>
+                        <td><input type='text' class='bound form-control' value='1'></td>
+                        </tr>
+                        <tr>
+                        <td><input type='text' class='name form-control' value='Francisco Silva'></td>
+                        <td><input type='text' class='weight form-control' value='73'></td>
+                        <td><input type='text' class='value form-control' value='40'></td>
+                        <td><input type='text' class='bound form-control' value='1'></td>
+                        </tr>
+                        <tr>
+                        <td><input type='text' class='name form-control' value='Felipe Gutierrez'></td>
+                        <td><input type='text' class='weight form-control' value='42'></td>
+                        <td><input type='text' class='value form-control' value='70'></td>
+                        <td><input type='text' class='bound form-control' value='1'></td>
+                        </tr>
+                        <tr>
+                        <td><input type='text' class='name form-control' value='Carlos Carmona'></td>
+                        <td><input type='text' class='weight form-control' value='43'></td>
+                        <td><input type='text' class='value form-control' value='75'></td>
+                        <td><input type='text' class='bound form-control' value='1'></td>
+                        </tr>
+                        <tr>
+                        <td><input type='text' class='name form-control' value='Jean Beausejour'></td>
+                        <td><input type='text' class='weight form-control' value='22'></td>
+                        <td><input type='text' class='value form-control' value='80'></td>
+                        <td><input type='text' class='bound form-control' value='1'></td>
+                        </tr>
+                        <tr>
+                        <td><input type='text' class='name form-control' value='Jorge Valdivia'></td>
+                        <td><input type='text' class='weight form-control' value='7'></td>
+                        <td><input type='text' class='value form-control' value='20'></td>
+                        <td><input type='text' class='bound form-control' value='1'></td>
+                        </tr>
+                        <tr>
+                        <td><input type='text' class='name form-control' value='Jose Pedro Fuenzalida'></td>
+                        <td><input type='text' class='weight form-control' value='18'></td>
+                        <td><input type='text' class='value form-control' value='12'></td>
+                        <td><input type='text' class='bound form-control' value='1'></td>
+                        </tr>
+                        <tr>
+                        <td><input type='text' class='name form-control' value='Eduardo Vargas'></td>
+                        <td><input type='text' class='weight form-control' value='4'></td>
+                        <td><input type='text' class='value form-control' value='50'></td>
+                        <td><input type='text' class='bound form-control' value='1'></td>
+                        </tr>
+                        <tr>
+                        <td><input type='text' class='name form-control' value='Fabian Orellana'></td>
+                        <td><input type='text' class='weight form-control' value='30'></td>
+                        <td><input type='text' class='value form-control' value='10'></td>
+                        <td><input type='text' class='bound form-control' value='1'></td>
+                        </tr>
+                        </tbody>
+                        </table>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div> <!-- end container -->
+    </div><!-- end row -->
+
+<!-- Core JavaScript Files -->
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="json2.js"></script>
+<script type="text/javascript" src="ga.js"></script>
 </body>
-
 </html>
